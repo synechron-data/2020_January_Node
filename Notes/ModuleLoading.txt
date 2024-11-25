@@ -1,0 +1,27 @@
+Module._load (require())
+
+1. Check Module._cache for the cached module.
+
+2. Create a new Module instance if cache is empty.
+
+3. Save it to the cache.
+
+4. Call module.load() with your the given filename.
+   This will call module.compile() after reading the file contents.
+  
+5. If there was an error loading/parsing the file,
+   delete the bad module from the cache
+  
+6. return module.exports
+
+---------------------------------------------------------
+Module._compile
+
+1. Create the standalone require function that calls module.require.
+
+2. Attach other helper methods to require.
+
+3. Wraps the JS code in a function that provides our require,
+   module, etc. variables locally to the module scope.
+
+4. Run that function

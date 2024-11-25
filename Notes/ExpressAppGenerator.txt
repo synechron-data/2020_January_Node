@@ -1,0 +1,15 @@
+npm install -g express-generator (Once)
+
+1. Navigate to the folder, you want to create application
+
+2. express --view=pug <my-app>
+
+3. cd <my-app>
+
+4. npm install
+
+5. npm install --save-dev nodemon
+
+6. Change start script in package.json file to use nodemon
+
+7. npm start
